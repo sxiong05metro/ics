@@ -1,11 +1,42 @@
 <!DOCTYPE HTML>
+
 <html>
-<head>
-	<title>ReChord</title>
-</head>
-<body>
-	<h1>ReChord</h1>
-	<button onclick="window.location.href = 'createitem.html';">Create Page</button>
-	<button onclick="window.location.href = 'getTables.php';">Browse</button>
-</body>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+	</script>
+	<script> 
+	$(function(){
+		$("#header").load("header.html"); 
+		$("#footer").load("footer.html"); 
+	});
+	</script>
+	
+	<link rel = "stylesheet" type = "text/css" href = "style.css"/>
+	
+	<head>
+		<title>ReChord</title>
+	</head>
+	
+	<div id="header"></div>
+	
+	<!-- content -->
+	<div class="center">
+		<body><center>
+			<img src="logomedium.png" alt="ReChord">
+			<br><br><br>
+			<form action="searchItem.php" method="GET">
+				<input type="text" name="search" placeholder="Search for an entry">
+				<button onclick="window.location.href = 'blah.html';">Search</button>
+			</form>
+			<button onclick="window.location.href = 'createItem.html';">Create</button>
+			<button onclick="window.location.href = 'getTables.php';">Browse</button>
+		</body></center>
+	</div>
+	<!-- // content -->
+	
+	<div id="footer"></div>
+	
 </html>
+

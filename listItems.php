@@ -1,3 +1,6 @@
+<html>
+<p>this page will load a list of all entries in the preciously selected table once we have it working</p>
+</html>
 <?php
 
 session_start();
