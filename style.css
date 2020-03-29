@@ -48,18 +48,35 @@
 	width: 100%;
 }
 
-.button {
+input:focus  {
+	box-shadow: 0 0 5px #d4d4d4;
+	border: 1px solid #d4d4d4;
+	outline: none;
+}
+
+input[type=text] {
+	padding: 8px;
+	margin: 4px 2px;
+	display: inline-block;
+	border: .5px solid #d4d4d4;
+	border-radius: 12px;
+	box-sizing: border-box;
+  }
+  
+ input[type=submit] {
 	background-color: #d4d4d4;
 	color: black;
 	padding: 8px;
+	border: none;
 	text-align: center;
-	display: inline-block;
 	font-size: 12px;
 	margin: 4px 2px;
 	border-radius: 12px;
-	border-style: none;
-}
-
-.button:hover {
-	background-color: #ddd
-}
+	border: .5px solid #d4d4d4;
+	cursor: pointer;
+  }
+  
+ input[type=submit]:hover {
+	background-color: #ddd;
+	border: .5px solid #d4d4d4;
+  }
