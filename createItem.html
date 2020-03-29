@@ -1,8 +1,27 @@
 <!DOCTYPE HTML>
+
 <html>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+</script>
+<script> 
+  $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });
+</script>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
 <head>
   <title>Create Entity</title>
 </head>
+
+<div id="header"></div>
+
 <body>
  <p>entering a table in 'item type' and a name for that item in 'item name' will create an entry in the specified table. once we have the DB working, of course.</p>
  <form action="insert.php" method="POST">
@@ -21,4 +40,7 @@
   </table>
  </form>
 </body>
+
+<div id="footer"></div>
+
 </html>
